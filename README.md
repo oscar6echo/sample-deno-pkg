@@ -11,6 +11,17 @@ deno run -N main.ts
 deno run -N path/to/sample-deno-pkg/main.ts
 
 # remote
-deno run --reload -N https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/main.ts
-# test with various import styles in util.ts
+REMOTE_SCRIPT=https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/main.ts
+REMOTE_DENO_JSON=https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/deno.json
+
+# does not work if imports do not use fully qualified urls
+deno run --reload -N $REMOTE_SCRIPT
+
+# remote - manual selection of config with path (e.g. from one level up)
+# works
+deno run --config ./sample-deno-pkg/deno.json --reload -N $REMOTE_SCRIPT
+
+# remote - manual selection of config with url
+# does not works
+deno run --config $REMOTE_DENO_JSON --reload -N $REMOTE_SCRIPT
 ```

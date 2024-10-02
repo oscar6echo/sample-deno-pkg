@@ -25,6 +25,11 @@
       "integrity": "aba6aea27f66813cecfd9484e074a9e9845782ab0685c030e453a8a70b37afc8"
     }
   },
+  "remote": {
+    "https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/main.ts": "89aeaae68400bb8f72bc149418308d40804dbcb592add88349569d08f8069a1b",
+    "https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/src/uri.ts": "63c5da7a0550a876510a4efae1e78ca8174bc480b485f5068590015fb4c09d97",
+    "https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/src/util.ts": "13a0cdf9e0903216096dd1b45853d695337c4d1840d5b21c48edb15a722a28f1"
+  },
   "workspace": {
     "dependencies": [
       "jsr:@cliffy/ansi@1.0.0-rc.5"
