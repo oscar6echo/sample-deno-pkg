@@ -11,5 +11,5 @@ deno run -N main.ts
 deno run -N deno-toolbox\tpkg\main.ts
 
 # test
-deno run --reload -N https://sgithub.fr.world.socgen/raw/deno-toolbox/tpkg/main/main.ts
+deno run --reload -N https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/main.ts
 ```
