@@ -22,6 +22,6 @@ deno run --reload -N $REMOTE_SCRIPT
 deno run --config ./sample-deno-pkg/deno.json --reload -N $REMOTE_SCRIPT
 
 # remote - manual selection of config with url
-# does not works
+# does not works (--config accepts a path not a url, it seems)
 deno run --config $REMOTE_DENO_JSON --reload -N $REMOTE_SCRIPT
 ```
