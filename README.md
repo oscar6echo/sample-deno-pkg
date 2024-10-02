@@ -10,6 +10,7 @@ deno run -N main.ts
 # other folder
 deno run -N path/to/sample-deno-pkg/main.ts
 
-# test
+# remote
 deno run --reload -N https://raw.githubusercontent.com/oscar6echo/sample-deno-pkg/refs/heads/main/main.ts
+# test with various import styles in util.ts
 ```
