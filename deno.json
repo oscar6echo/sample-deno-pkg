@@ -1,0 +1,22 @@
+{
+  "fmt": {
+    "indentWidth": 2,
+    "exclude": [
+      ".vscode",
+      ".gitignore",
+      "deno.json",
+      "deno.lock",
+      "README.md",
+      "wip"
+    ]
+  },
+  "lint": {
+    "exclude": ["wip"]
+  },
+  "imports": {
+    "@cliffy/ansi": "jsr:@cliffy/ansi@1.0.0-rc.5"
+  },
+  "tasks": {
+    "main": "deno run -N main.ts"
+  }
+}
